@@ -1,18 +1,18 @@
 # Customer Experience and Retention Analysis
 
-A customer churn and retention analysis project built around IBM Telco sample data, with a statistics-first workflow, validation checks, SQL analysis, and modeling preparation.
+A customer churn and retention analysis project using IBM Telco sample data, with a focus on validation, SQL exploration, statistical thinking, and business-ready interpretation.
 
-## Overview
+## Project goal
 
-This project studies which customer characteristics and service patterns are associated with churn. The work focuses on data quality, exploratory analysis, statistical inference, and business interpretation instead of only model output.
+This project studies which customer attributes and service patterns are associated with churn, and how those patterns can inform retention strategy and future business experiments.
 
-## Business question
+## Why this project matters
 
-Which customer attributes and service patterns are associated with churn, and how can that understanding support retention strategies and future experiments?
+Customer retention is a critical business problem for subscription-based services. This analysis is designed to show how a data-science workflow can move from raw data quality checks to exploratory analysis, statistical inference, and decision support.
 
 ## Dataset
 
-This project uses the IBM Telco Customer Churn sample dataset, which is a fictional telco dataset used for churn analysis.
+The project uses the IBM Telco Customer Churn sample dataset, a fictional telco dataset used for churn analysis.
 
 Key files:
 
@@ -61,20 +61,21 @@ Customer-Experience-and-Retention-Analysis/
 │   ├── interview_guide.md
 │   └── project_reference.md
 ├── CLAUDE.md
-└── LICENSE
+├── LICENSE
+└── .github/
 ```
 
-## Key files to open first
+## Main files to review first
 
 - `notebooks/01_data_validation.ipynb` for the validation workflow
-- `notebooks/02_eda_sql.ipynb` for the SQL and EDA stage
-- `src/data_processing.py` for the cleaning workflow
+- `notebooks/02_eda_sql.ipynb` for SQL and EDA output
+- `src/data_processing.py` for the cleaning and transformation logic
 - `reports/project_reference.md` for the full project narrative and resume-ready summary
-- `reports/results/overall_summary.csv` for the verified summary metrics
+- `reports/results/overall_summary.csv` for verified dataset summaries
 
-## Verified results from the current data
+## Verified findings
 
-From the saved project outputs, the analysis shows:
+From the saved project outputs, the current dataset shows:
 
 - Overall churn rate: 26.54%
 - Month-to-month churn: 42.71%
@@ -82,20 +83,21 @@ From the saved project outputs, the analysis shows:
 - Two-year contract churn: 2.83%
 - Fiber optic churn: 41.89%
 - No internet service churn: 7.40%
-- Customers in 0 to 12 months tenure: 47.44% churn
+- 0 to 12 month tenure churn: 47.44%
 
-These figures come from project outputs saved under `reports/results/` and are intended to support business interpretation and future model work.
+These figures are saved in the project output files and are intended for business interpretation and follow-up analysis.
 
-## Methodology
+## Workflow
 
-The workflow includes:
+This project follows a practical data-science pipeline:
 
-1. Data validation and documentation of data issues
-2. Data cleaning and transformation logging
-3. SQL-based customer segmentation and churn summaries
-4. Statistical tests and effect-size thinking
-5. Modeling preparation and comparison of predictive approaches
-6. Business recommendations and experiment design
+1. Validate the raw dataset
+2. Document structure and quality issues
+3. Clean and transform the data with traceability
+4. Explore churn patterns with SQL and descriptive analysis
+5. Run inferential and resampling-based statistical checks
+6. Prepare for modeling and experiment design
+7. Translate findings into business recommendations
 
 ## Reproduction
 
@@ -104,10 +106,10 @@ The workflow includes:
    `pip install -r requirements.txt`
 3. Run the validation and cleaning workflow:
    `python src/data_processing.py`
-4. Run the SQL and EDA workflow:
+4. Run the SQL analysis workflow:
    `python src/sql_analysis.py`
-5. Open the notebooks in order for the full analysis workflow.
+5. Open the notebooks in order to explore the analysis in detail.
 
 ## Notes
 
-This project uses observational data and focuses on association rather than causation. The analysis is intended to support retention strategy and data-science interview preparation, not to claim causal conclusions.
+This project uses observational data and focuses on association rather than causation. The goal is to identify patterns, quantify uncertainty, and support business decisions with evidence while staying careful about statistical interpretation.
