@@ -1,0 +1,6 @@
+step,action,reason
+load_raw,Read CSV with dtype=str and keep_default_na=False to retain blank strings.,Preserve raw text values so we can validate blanks and categories before conversion.
+blank_totalcharges_fill,Filled blank TotalCharges with 0 for tenure = 0 customers only.,"These customers were not billed yet, so the missing value is structurally zero rather than unknown."
+coerce_numeric_types,"Converted tenure, MonthlyCharges, and TotalCharges to numeric types.",Support modeling and summary statistics.
+seniorcitizen_recode,Converted SeniorCitizen 0/1 to No/Yes.,Keep categorical encoding consistent with the rest of the dataset.
+churn_flag_addition,Added churn_flag equal to 1 when Churn equals Yes.,Provide a binary target for downstream modeling.

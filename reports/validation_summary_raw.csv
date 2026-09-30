@@ -1,0 +1,13 @@
+metric,value
+rows,7043
+columns,21
+duplicate_rows,0
+duplicate_customerID,0
+blank_TotalCharges,11
+tenure_zero_count,11
+ratio_outside_0_5_to_1_5,2
+ratio_missing,11
+raw_churn_yes,1869
+raw_churn_no,5174
+logic_InternetService_no_vs_addon,0
+logic_MultipleLines_no_phone_service,0

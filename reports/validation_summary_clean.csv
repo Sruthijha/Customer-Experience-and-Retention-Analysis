@@ -1,0 +1,12 @@
+metric,value
+rows,7043.0
+columns,22.0
+duplicate_customerID,0.0
+missing_totalcharges,0.0
+series_unique_tenure,73.0
+min_tenure,0.0
+max_tenure,72.0
+mean_monthly_charges,64.76169246059918
+mean_total_charges,2279.7343035638223
+churn_yes,1869.0
+churn_no,5174.0
